@@ -49,11 +49,14 @@ class ViewController: UIViewController {
             }
         }
     }
-    
-
-    
-    
-    
+    @IBAction func yüzde(_ sender: Any) {
+        if let sayı = Double(text.text!){
+            if let sayı1 = Double(text1.text!){
+                let sonuc = (sayı/100)*sayı1
+                text2.text = String(sonuc)
+            }
+        }
+    }
     
 }
 
